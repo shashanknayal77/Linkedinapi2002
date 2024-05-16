@@ -14,7 +14,7 @@ st.title('LinkedIn Job Scraper')
 url1=st.text_input('Enter url')
 
 if url1:
-    driver = webdriver.Chrome()
+    driver = webdriver.Chrome(executable_path="C:\Windows\chromedriver.exe")
     driver.implicitly_wait(10)
     driver.get(url1)
     title =driver.title
