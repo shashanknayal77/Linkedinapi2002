@@ -21,7 +21,7 @@ if url1:
     print(title)
     y=driver.find_elements(By.CLASS_NAME, 'results-context-header__job-count')[0].text
     y= ''.join(filter(str.isdigit, y))
-    n = int(y)
+    n=int(y)
     st.write(f"Page Title: {title}")
 
     companyname= []
